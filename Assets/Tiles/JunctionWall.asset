@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: WallEmpty
+  m_Name: JunctionWall
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: 21300000, guid: 78c6bafef0b221749a8d2d7936bcf640, type: 3}
-  m_Color: {r: 0.7207546, g: 0.6983335, b: 0.5045282, a: 1}
+  m_Sprite: {fileID: -238508608773733946, guid: 148a36914415fe04bba2d3e87792280b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0
