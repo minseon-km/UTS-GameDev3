@@ -28,7 +28,7 @@ public class AudioManager : MonoBehaviour
         {
             yield return new WaitForSeconds(0.5f);
             if (!audioSource.isPlaying) {
-                audioSource.clip = audioSource.clip = musics[1];
+                audioSource.clip = musics[1];
                 audioSource.Play();
                 audioSource.loop = true;
             }
