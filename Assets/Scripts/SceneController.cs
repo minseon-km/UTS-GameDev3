@@ -8,6 +8,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    public void LoadStartScene()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
