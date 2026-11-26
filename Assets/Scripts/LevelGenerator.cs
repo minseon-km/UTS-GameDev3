@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
+    public PacStudentController pacStudentController;
+    
     private int[,] levelMap =
     {
         {1,2,2,2,2,2,2,2,2,2,2,2,2,7},
@@ -57,6 +59,9 @@ public class LevelGenerator : MonoBehaviour
 
         // 4. 카메라 뷰포트 조절
         AdjustCamera();
+
+        Vector2 origin = new Vector2(-(fullCols - 1) / 2.0f, (fullRows - 1) / 2.0f);
+        pacStudentController.InitializeMap(fullMap, origin, 1f);
     }
 
     private void BuildFullMap()
@@ -254,6 +259,7 @@ public class LevelGenerator : MonoBehaviour
                 sr.flipY = false;
             }
         }
+        
     }
 
     private void SetSortingOrder(GameObject target, int order)
